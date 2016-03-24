@@ -1,4 +1,4 @@
-name := """play-web-simple"""
+name := "play-web-simple"
 
 version := "1.0.0"
 
