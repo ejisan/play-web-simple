@@ -15,10 +15,4 @@ addSbtPlugin("com.typesafe.sbt" % "sbt-digest" % "1.1.0")
 
 addSbtPlugin("com.typesafe.sbt" % "sbt-mocha" % "1.1.0")
 
-// Sass plugin
-
-// addSbtPlugin("org.irundaia.sbt" % "sbt-sassify" % "1.4.2")
-
-resolvers += Resolver.url("GitHub repository", url("http://shaggyyeti.github.io/releases"))(Resolver.ivyStylePatterns)
-
-addSbtPlugin("default" % "sbt-sass" % "0.1.9")
+addSbtPlugin("org.irundaia.sbt" % "sbt-sassify" % "1.4.4")

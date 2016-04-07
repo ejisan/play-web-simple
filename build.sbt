@@ -14,6 +14,7 @@ libraryDependencies ++= Seq(
 
 // Web Jars Dependencies
 libraryDependencies ++= Seq(
+  "org.webjars.bower" % "compass-mixins" % "1.0.2",
   "org.webjars" % "webjars-play_2.11" % "2.5.0",
   "org.webjars" % "jquery" % "2.2.2",
   "org.webjars" % "foundation" % "6.2.0"
@@ -27,10 +28,6 @@ resolvers += "Ejisan Github" at "https://ejisan.github.io/repo/"
 
 // Twirl importing classes
 TwirlKeys.templateImports += "ejisan.play.libs.PageMeta"
-
-// Sass compiler options
-sassOptions in Assets ++= Seq("--compass", "-r", "compass")
-sassOptions in Assets ++= Seq("--cache-location", "target/web/sass/.sass-cache")
 
 // Play provides two styles of routers, one expects its actions to be injected, the
 // other, legacy style, accesses its actions statically.
